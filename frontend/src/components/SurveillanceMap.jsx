@@ -22,9 +22,10 @@ export default function SurveillanceMap({ candidateLocations, victimCity, curren
         attributionControl: false
       }).setView([20.5937, 78.9629], 5);
 
-      L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
-        maxZoom: 19
+      L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
+        maxZoom: 16
       }).addTo(map);
+
 
       mapInstanceRef.current = map;
       layerGroupRef.current = L.layerGroup().addTo(map);

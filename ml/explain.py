@@ -42,13 +42,19 @@ FEATURE_LABELS = {
 def explain_candidate_prediction(
     case_id: str,
     target_rank: int = 1,
-    top_n_factors: int = 4
+    top_n_factors: int = 4,
+    custom_transactions_df: Optional[pd.DataFrame] = None,
+    custom_accounts_lookup: Optional[Dict[str, Any]] = None
 ) -> Dict[str, Any]:
     """
     Computes SHAP values or feature importance attributions for a given case and candidate rank.
     """
     model, feature_cols, data = get_inference_resources()
-    pred_res = predict_locations(case_id)
+    pred_res = predict_locations(
+        case_id,
+        custom_transactions_df=custom_transactions_df,
+        custom_accounts_lookup=custom_accounts_lookup
+    )
 
     if not pred_res["all_ranked_locations"]:
         raise ValueError("No predictions available to explain.")
@@ -57,19 +63,25 @@ def explain_candidate_prediction(
     selected_cand = pred_res["all_ranked_locations"][target_rank - 1]
     loc_id = selected_cand["location_id"]
 
+    tx_source = custom_transactions_df if custom_transactions_df is not None else data["transactions"]
+    acc_lookup = data["account_lookup"].copy()
+    if custom_accounts_lookup:
+        acc_lookup.update(custom_accounts_lookup)
+
     # Reconstruct feature vector for this candidate
     case_row = data["cases"][data["cases"]["case_id"] == case_id].iloc[0].to_dict()
-    case_tx = filter_transactions_up_to_t(data["transactions"], case_id, pd.to_datetime(pred_res["prediction_time"]))
+    case_tx = filter_transactions_up_to_t(tx_source, case_id, pd.to_datetime(pred_res["prediction_time"]))
     cand_row = data["locations"][data["locations"]["location_id"] == loc_id].iloc[0].to_dict()
 
     feat_vec = build_candidate_feature_vector(
         case_info=case_row,
         case_tx=case_tx,
         candidate_loc=cand_row,
-        account_lookup=data["account_lookup"],
+        account_lookup=acc_lookup,
         city_coords_lookup=data["city_coords"],
         t_prediction=pd.to_datetime(pred_res["prediction_time"])
     )
+
 
     X_sample = pd.DataFrame([[feat_vec.get(col, 0.0) for col in feature_cols]], columns=feature_cols)
 

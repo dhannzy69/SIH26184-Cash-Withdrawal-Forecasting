@@ -151,7 +151,10 @@ export default function App() {
               caseId={selectedCaseId}
               onTransactionInjected={handleTransactionInjected}
               isSimulating={isSimulating}
+              currentTransactions={currentTransactions}
+              currentCaseMeta={currentCaseMeta}
             />
+
           </div>
 
           {/* RIGHT COLUMN: Map, Projected Time Window, Top-K Rankings, SHAP, Alerts */}

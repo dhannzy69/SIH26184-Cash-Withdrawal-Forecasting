@@ -1,7 +1,9 @@
 from typing import List, Optional
 from datetime import datetime
+import pandas as pd
 from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy.orm import Session
+
 
 from backend.database import get_db
 from backend.models import Case, Account, Transaction, Alert
@@ -67,11 +69,35 @@ def ingest_transaction(payload: TransactionCreate, db: Session = Depends(get_db)
     db.commit()
     db.refresh(new_tx)
 
-    # 3. Trigger Real-Time ML Re-scoring
+    # 3. Trigger Real-Time ML Re-scoring using complete updated DB state
+    all_txs = db.query(Transaction).filter(Transaction.case_id == payload.case_id).all()
+    df_tx = pd.DataFrame([{
+        "transaction_id": t.transaction_id,
+        "case_id": t.case_id,
+        "sender_account": t.sender_account,
+        "receiver_account": t.receiver_account,
+        "amount": float(t.amount),
+        "timestamp": pd.to_datetime(t.timestamp),
+        "transaction_type": t.transaction_type
+    } for t in all_txs])
+
+    all_accs = db.query(Account).filter(Account.case_id == payload.case_id).all()
+    custom_acc_lookup = {
+        a.account_id: {
+            "account_type": a.account_type,
+            "region": a.region,
+            "account_age_days": a.account_age_days
+        }
+        for a in all_accs
+    }
+
     ml_forecast = predict_locations(
         case_id=payload.case_id,
-        prediction_time=payload.timestamp
+        prediction_time=payload.timestamp,
+        custom_transactions_df=df_tx,
+        custom_accounts_lookup=custom_acc_lookup
     )
+
 
     # 4. Auto-Alert Generation if Top Candidate Exceeds Risk Threshold
     alert_created = None

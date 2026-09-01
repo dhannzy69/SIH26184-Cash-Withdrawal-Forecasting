@@ -64,7 +64,8 @@ def assign_risk_level(score: float, rank: int) -> str:
 def predict_locations(
     case_id: str,
     prediction_time: Optional[Union[str, pd.Timestamp]] = None,
-    custom_transactions_df: Optional[pd.DataFrame] = None
+    custom_transactions_df: Optional[pd.DataFrame] = None,
+    custom_accounts_lookup: Optional[Dict[str, Any]] = None
 ) -> Dict[str, Any]:
     """
     Given an active case_id and prediction cut-off time T:
@@ -79,8 +80,11 @@ def predict_locations(
     cases_df = data["cases"]
     transactions_df = custom_transactions_df if custom_transactions_df is not None else data["transactions"]
     locations_df = data["locations"]
-    account_lookup = data["account_lookup"]
+    account_lookup = data["account_lookup"].copy()
+    if custom_accounts_lookup:
+        account_lookup.update(custom_accounts_lookup)
     city_coords = data["city_coords"]
+
 
     # 1. Fetch case record
     case_matches = cases_df[cases_df["case_id"] == case_id]

@@ -22,6 +22,32 @@ export default function CaseSelector({ cases, selectedCaseId, onSelectCase, curr
     }).format(amt || 0);
   };
 
+  const handleFilterChange = (type) => {
+    setFilterType(type);
+    const nextFiltered = cases.filter(c => {
+      const matchesSearch = c.case_id.toLowerCase().includes(searchTerm.toLowerCase()) ||
+                            c.victim_region.toLowerCase().includes(searchTerm.toLowerCase());
+      const matchesType = type === 'ALL' || c.fraud_type === type;
+      return matchesSearch && matchesType;
+    });
+    if (nextFiltered.length > 0 && !nextFiltered.some(c => c.case_id === selectedCaseId)) {
+      onSelectCase(nextFiltered[0].case_id);
+    }
+  };
+
+  const handleSearchChange = (term) => {
+    setSearchTerm(term);
+    const nextFiltered = cases.filter(c => {
+      const matchesSearch = c.case_id.toLowerCase().includes(term.toLowerCase()) ||
+                            c.victim_region.toLowerCase().includes(term.toLowerCase());
+      const matchesType = filterType === 'ALL' || c.fraud_type === filterType;
+      return matchesSearch && matchesType;
+    });
+    if (nextFiltered.length > 0 && !nextFiltered.some(c => c.case_id === selectedCaseId)) {
+      onSelectCase(nextFiltered[0].case_id);
+    }
+  };
+
   return (
     <div className="glass-card" style={{ marginBottom: '1.25rem' }}>
       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '1rem' }}>
@@ -36,7 +62,7 @@ export default function CaseSelector({ cases, selectedCaseId, onSelectCase, curr
         {fraudTypes.map(t => (
           <button
             key={t}
-            onClick={() => setFilterType(t)}
+            onClick={() => handleFilterChange(t)}
             style={{
               padding: '0.3rem 0.65rem',
               borderRadius: 'var(--radius-full)',
@@ -53,6 +79,7 @@ export default function CaseSelector({ cases, selectedCaseId, onSelectCase, curr
           </button>
         ))}
       </div>
+
 
       {/* Case Selector Dropdown */}
       <div style={{ marginBottom: '1rem' }}>
