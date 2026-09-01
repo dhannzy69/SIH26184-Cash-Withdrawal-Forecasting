@@ -26,3 +26,8 @@ ENV/
 Thumbs.db
 ehthumbs.db
 Desktop.ini
+
+# Database
+*.db
+*.sqlite3
+
