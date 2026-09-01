@@ -118,9 +118,9 @@ export default function App() {
     }
   }
 
-  const currentCaseMeta = caseDossier ? caseDossier.case_details : null;
-  const currentTransactions = caseDossier ? caseDossier.transaction_history : [];
-  const currentAccounts = caseDossier ? caseDossier.accounts : [];
+  const currentCaseMeta = caseDossier ? (caseDossier.case_details || caseDossier) : null;
+  const currentTransactions = (caseDossier && (caseDossier.transactions || caseDossier.transaction_history)) || [];
+  const currentAccounts = (caseDossier && caseDossier.accounts) || [];
 
   return (
     <div style={{ maxWidth: '1440px', margin: '0 auto', padding: '0.5rem 1rem 3rem 1rem' }}>
@@ -171,8 +171,9 @@ export default function App() {
               <SurveillanceMap
                 candidateLocations={prediction ? prediction.top_5 : []}
                 victimCity={currentCaseMeta ? currentCaseMeta.victim_region : null}
-                currentMuleCity={currentTransactions.length > 0 ? currentTransactions[currentTransactions.length - 1].receiver_account : null}
+                currentMuleCity={currentTransactions?.length > 0 ? currentTransactions[currentTransactions.length - 1].receiver_account : null}
               />
+
 
               <div style={{ display: 'grid', gridTemplateColumns: '1.1fr 0.9fr', gap: '1.25rem' }}>
                 <RankingsTable
