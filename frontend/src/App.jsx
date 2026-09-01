@@ -93,15 +93,10 @@ export default function App() {
         estimated_time_window: prediction ? prediction.estimated_cashout_time_window : '06:00 - 07:10',
         notes: `Dispatched via Investigator Portal for ${candidateLoc.city}`
       };
-      const res = await fetch('http://127.0.0.1:8000/api/alerts/dispatch', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(payload)
-      });
-      if (res.ok) {
-        const updatedAlerts = await api.getAlerts();
-        setAlerts(updatedAlerts);
-      }
+      await api.dispatchAlert(payload);
+      const updatedAlerts = await api.getAlerts();
+      setAlerts(updatedAlerts);
+
     } catch (err) {
       console.error("Alert dispatch failed:", err);
     }

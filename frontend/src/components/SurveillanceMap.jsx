@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import L from 'leaflet';
-import { Map, Layers } from 'lucide-react';
+import { Map } from 'lucide-react';
 
 export default function SurveillanceMap({ candidateLocations, victimCity, currentMuleCity }) {
   const mapContainerRef = useRef(null);
@@ -10,8 +10,13 @@ export default function SurveillanceMap({ candidateLocations, victimCity, curren
   useEffect(() => {
     if (!mapContainerRef.current) return;
 
-    // Initialize map once
+    // Initialize Leaflet map safely
     if (!mapInstanceRef.current) {
+      // Clear any dangling leaflet id on the container
+      if (mapContainerRef.current._leaflet_id) {
+        mapContainerRef.current._leaflet_id = null;
+      }
+
       const map = L.map(mapContainerRef.current, {
         zoomControl: true,
         attributionControl: false
@@ -27,14 +32,19 @@ export default function SurveillanceMap({ candidateLocations, victimCity, curren
 
     const map = mapInstanceRef.current;
     const layers = layerGroupRef.current;
-    layers.clearLayers();
+    if (layers) {
+      layers.clearLayers();
+    }
 
-    if (!candidateLocations || candidateLocations.length === 0) return;
+    const validLocations = Array.isArray(candidateLocations) ? candidateLocations : [];
+    if (validLocations.length === 0) return;
 
     const bounds = L.latLngBounds([]);
 
-    // 1. Render Top-5 Predicted ATM Clusters
-    candidateLocations.slice(0, 5).forEach((loc) => {
+    // Render Top-5 Predicted ATM Clusters
+    validLocations.slice(0, 5).forEach((loc) => {
+      if (!loc.latitude || !loc.longitude) return;
+
       const latLng = [loc.latitude, loc.longitude];
       bounds.extend(latLng);
 
@@ -84,6 +94,13 @@ export default function SurveillanceMap({ candidateLocations, victimCity, curren
       map.fitBounds(bounds, { padding: [40, 40], maxZoom: 7 });
     }
 
+    return () => {
+      // Cleanup on unmount
+      if (mapInstanceRef.current) {
+        mapInstanceRef.current.remove();
+        mapInstanceRef.current = null;
+      }
+    };
   }, [candidateLocations, victimCity, currentMuleCity]);
 
   return (
