@@ -1,0 +1,61 @@
+{
+  "best_model_name": "RandomForest",
+  "feature_count": 48,
+  "validation_metrics": {
+    "precision": 0.0526,
+    "recall": 0.0222,
+    "f1": 0.0312,
+    "roc_auc": 0.5583,
+    "confusion_matrix": [
+      [
+        954,
+        36
+      ],
+      [
+        88,
+        2
+      ]
+    ],
+    "top1": 0.0889,
+    "top3": 0.3222,
+    "top5": 0.5444
+  },
+  "test_metrics": {
+    "precision": 0.1282,
+    "recall": 0.0556,
+    "f1": 0.0775,
+    "roc_auc": 0.5018,
+    "confusion_matrix": [
+      [
+        956,
+        34
+      ],
+      [
+        85,
+        5
+      ]
+    ],
+    "top1": 0.0778,
+    "top3": 0.2889,
+    "top5": 0.4
+  },
+  "baseline_test_metrics": {
+    "precision": 0.1023,
+    "recall": 0.6,
+    "f1": 0.1748,
+    "roc_auc": 0.558,
+    "confusion_matrix": [
+      [
+        516,
+        474
+      ],
+      [
+        36,
+        54
+      ]
+    ],
+    "top1": 0.0667,
+    "top3": 0.2,
+    "top5": 0.4667
+  }
+}

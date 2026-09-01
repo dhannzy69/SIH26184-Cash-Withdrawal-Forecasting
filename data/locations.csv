@@ -1,0 +1,13 @@
+location_id,city,district,state,latitude,longitude,atm_cluster_name
+L001,Bengaluru,Bengaluru Urban,Karnataka,12.9716,77.5946,Cluster A
+L002,Chennai,Chennai,Tamil Nadu,13.0827,80.2707,Cluster B
+L003,Hyderabad,Hyderabad,Telangana,17.385,78.4867,Cluster C
+L004,Coimbatore,Coimbatore,Tamil Nadu,11.0168,76.9558,Cluster D
+L005,Kochi,Ernakulam,Kerala,9.9312,76.2673,Cluster E
+L006,Pune,Pune,Maharashtra,18.5204,73.8567,Cluster F
+L007,Mumbai,Mumbai,Maharashtra,19.076,72.8777,Cluster G
+L008,Delhi,New Delhi,Delhi,28.6139,77.209,Cluster H
+L009,Ahmedabad,Ahmedabad,Gujarat,23.0225,72.5714,Cluster I
+L010,Jaipur,Jaipur,Rajasthan,26.9124,75.7873,Cluster J
+L011,Lucknow,Lucknow,Uttar Pradesh,26.8467,80.9462,Cluster K
+L012,Bhubaneswar,Khordha,Odisha,20.2961,85.8245,Cluster L

@@ -1,0 +1,36 @@
+================================================================================
+SIH26184: CYBERCRIME CASH-WITHDRAWAL LOCATION FORECASTING - EVALUATION REPORT
+================================================================================
+
+1. SYNTHETIC DATA LIMITATION & ETHICAL DISCLAIMER:
+--------------------------------------------------
+This prototype uses synthetic data. The resulting model performance demonstrates
+the technical workflow and controlled experimental behaviour only; it does not establish
+real-world predictive accuracy.
+
+Operational Considerations for Real-World Deployment:
+- False Positives: Candidate rankings represent probabilistic risk; not definitive certainty.
+- Concept Drift & Changing Criminal Behaviour: Mule networks actively morph routing topologies.
+- Geographic Heterogeneity: Localized ATM cluster densities vary heavily by state.
+- Data Governance: Real-world deployment requires authorized law-enforcement (I4C/CFCFRMS) integration.
+- Human-in-the-Loop: Model output must serve as actionable leads for authorized human investigators.
+
+2. BENCHMARK PERFORMANCE COMPARISON (TEST SET EVALUATION):
+---------------------------------------------------------
+Model                    | Precision | Recall   | F1     | ROC-AUC | Top-1  | Top-3  | Top-5 
+---------------------------------------------------------------------------------------------
+LogisticRegression       | 0.1023    | 0.6000   | 0.1748 | 0.5580  | 0.0667 | 0.2000 | 0.4667
+RandomForest             | 0.1282    | 0.0556   | 0.0775 | 0.5018  | 0.0778 | 0.2889 | 0.4000
+XGBoost                  | 0.0833    | 0.0778   | 0.0805 | 0.4976  | 0.0556 | 0.2444 | 0.4333
+
+3. SELECTED MODEL: RandomForest
+---------------------------------------------------------
+The RandomForest model was selected based on superior validation Top-K ranking accuracy
+and balanced discrimination under severe class imbalance (1:11 ratio).
+
+4. RANKING METRICS INTERPRETATION:
+---------------------------------
+- Top-1 Accuracy: Proportion of cases where the single highest scored candidate is the actual cash-out location.
+- Top-3 Accuracy: Proportion of cases where the actual cash-out location is within the top 3 recommendations.
+- Top-5 Accuracy: Proportion of cases where field teams dispatching to the top 5 clusters intercept the withdrawal.
+================================================================================

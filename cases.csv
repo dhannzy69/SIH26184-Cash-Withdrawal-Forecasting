@@ -1,0 +1,601 @@
+case_id,fraud_type,complaint_time,amount,victim_region,status
+C0001,Investment Fraud,2026-06-13 03:48:00,148790,Kochi,Closed
+C0002,Job Scam,2026-02-10 23:49:00,167892,Pune,Closed
+C0003,Investment Fraud,2026-08-07 07:56:00,82917,Mumbai,Closed
+C0004,UPI Fraud,2026-02-24 19:21:00,353732,Hyderabad,Closed
+C0005,Online Shopping Fraud,2026-05-16 08:34:00,68689,Chennai,Closed
+C0006,Phishing,2026-05-10 20:47:00,69022,Bengaluru,Closed
+C0007,Online Shopping Fraud,2026-04-19 07:13:00,121357,Hyderabad,Closed
+C0008,Online Shopping Fraud,2026-02-03 19:29:00,25159,Delhi,Closed
+C0009,Job Scam,2026-04-25 04:47:00,44474,Bengaluru,Closed
+C0010,Job Scam,2026-07-07 18:58:00,48363,Bengaluru,Closed
+C0011,Phishing,2026-01-31 19:26:00,323011,Chennai,Closed
+C0012,Investment Fraud,2026-05-25 03:24:00,105550,Hyderabad,Closed
+C0013,Phishing,2026-07-03 11:42:00,64693,Kochi,Closed
+C0014,UPI Fraud,2026-06-20 03:30:00,39820,Mumbai,Closed
+C0015,Phishing,2026-08-12 07:46:00,61846,Chennai,Closed
+C0016,Online Shopping Fraud,2026-04-22 20:41:00,61793,Coimbatore,Closed
+C0017,Online Shopping Fraud,2026-06-23 05:56:00,98926,Kochi,Closed
+C0018,Investment Fraud,2026-05-02 20:51:00,193099,Delhi,Closed
+C0019,Online Shopping Fraud,2026-05-10 14:33:00,118186,Delhi,Closed
+C0020,Phishing,2026-06-27 05:12:00,34557,Coimbatore,Closed
+C0021,Online Shopping Fraud,2026-08-24 04:21:00,180538,Chennai,Closed
+C0022,Phishing,2026-01-08 08:26:00,91163,Chennai,Closed
+C0023,Phishing,2026-04-07 13:32:00,30641,Coimbatore,Closed
+C0024,Phishing,2026-08-17 15:41:00,69176,Mumbai,Closed
+C0025,Job Scam,2026-03-28 00:58:00,131639,Pune,Closed
+C0026,UPI Fraud,2026-06-27 08:18:00,129598,Pune,Closed
+C0027,Investment Fraud,2026-02-02 09:21:00,58185,Chennai,Closed
+C0028,Online Shopping Fraud,2026-05-23 14:12:00,228142,Hyderabad,Closed
+C0029,UPI Fraud,2026-06-25 07:58:00,51100,Hyderabad,Closed
+C0030,Online Shopping Fraud,2026-02-28 23:00:00,130344,Chennai,Closed
+C0031,UPI Fraud,2026-01-23 10:44:00,68158,Pune,Closed
+C0032,Investment Fraud,2026-05-05 04:08:00,41268,Hyderabad,Closed
+C0033,Online Shopping Fraud,2026-02-18 20:27:00,191558,Bengaluru,Closed
+C0034,Phishing,2026-02-18 23:48:00,94401,Mumbai,Closed
+C0035,Phishing,2026-08-11 22:20:00,133550,Coimbatore,Closed
+C0036,Investment Fraud,2026-08-20 00:59:00,133524,Pune,Closed
+C0037,UPI Fraud,2026-03-01 15:44:00,97174,Delhi,Closed
+C0038,Job Scam,2026-08-01 22:28:00,12297,Kochi,Closed
+C0039,UPI Fraud,2026-06-15 01:20:00,107211,Delhi,Closed
+C0040,Investment Fraud,2026-03-17 11:33:00,107617,Delhi,Closed
+C0041,Online Shopping Fraud,2026-01-07 21:08:00,83883,Pune,Closed
+C0042,Investment Fraud,2026-08-15 14:09:00,326191,Delhi,Closed
+C0043,Phishing,2026-07-15 18:55:00,52372,Hyderabad,Closed
+C0044,Online Shopping Fraud,2026-07-09 14:22:00,207990,Coimbatore,Closed
+C0045,Investment Fraud,2026-05-06 15:08:00,65454,Coimbatore,Closed
+C0046,UPI Fraud,2026-03-22 14:34:00,108075,Kochi,Closed
+C0047,Job Scam,2026-02-24 05:16:00,57027,Hyderabad,Closed
+C0048,Investment Fraud,2026-03-28 11:58:00,73074,Bengaluru,Closed
+C0049,UPI Fraud,2026-06-22 02:47:00,126730,Delhi,Closed
+C0050,Phishing,2026-07-11 14:41:00,100409,Bengaluru,Closed
+C0051,Online Shopping Fraud,2026-03-04 14:52:00,32229,Mumbai,Closed
+C0052,Online Shopping Fraud,2026-02-20 05:55:00,76020,Bengaluru,Closed
+C0053,UPI Fraud,2026-05-10 02:31:00,87894,Delhi,Closed
+C0054,Online Shopping Fraud,2026-04-23 17:53:00,452197,Bengaluru,Closed
+C0055,Online Shopping Fraud,2026-01-22 10:34:00,122880,Mumbai,Closed
+C0056,Investment Fraud,2026-05-19 17:58:00,21545,Pune,Closed
+C0057,UPI Fraud,2026-05-01 06:37:00,104936,Delhi,Closed
+C0058,UPI Fraud,2026-07-29 15:23:00,85736,Chennai,Closed
+C0059,Online Shopping Fraud,2026-05-21 20:46:00,97261,Mumbai,Closed
+C0060,UPI Fraud,2026-01-01 20:59:00,249492,Hyderabad,Closed
+C0061,Job Scam,2026-02-14 23:22:00,188292,Delhi,Closed
+C0062,Job Scam,2026-07-24 12:33:00,307171,Mumbai,Closed
+C0063,Investment Fraud,2026-06-13 01:57:00,159917,Mumbai,Closed
+C0064,Investment Fraud,2026-03-13 08:31:00,45274,Chennai,Closed
+C0065,UPI Fraud,2026-03-23 22:47:00,108298,Coimbatore,Closed
+C0066,Online Shopping Fraud,2026-07-16 13:58:00,28923,Coimbatore,Closed
+C0067,Online Shopping Fraud,2026-02-27 11:48:00,42748,Kochi,Closed
+C0068,Investment Fraud,2026-08-10 00:58:00,47924,Chennai,Closed
+C0069,UPI Fraud,2026-07-03 10:53:00,53440,Mumbai,Closed
+C0070,Job Scam,2026-05-12 15:56:00,191710,Kochi,Closed
+C0071,Job Scam,2026-04-09 17:12:00,119957,Kochi,Closed
+C0072,Phishing,2026-06-05 17:35:00,27637,Pune,Closed
+C0073,Online Shopping Fraud,2026-07-04 01:45:00,123109,Delhi,Closed
+C0074,Online Shopping Fraud,2026-05-13 07:04:00,37174,Pune,Closed
+C0075,UPI Fraud,2026-08-28 09:20:00,151824,Coimbatore,Closed
+C0076,Investment Fraud,2026-06-24 04:41:00,122188,Bengaluru,Closed
+C0077,UPI Fraud,2026-06-04 03:39:00,58041,Kochi,Closed
+C0078,UPI Fraud,2026-03-05 00:13:00,126422,Mumbai,Closed
+C0079,UPI Fraud,2026-08-29 10:04:00,444873,Hyderabad,Closed
+C0080,Online Shopping Fraud,2026-05-10 06:54:00,38556,Bengaluru,Closed
+C0081,Investment Fraud,2026-02-25 19:44:00,45852,Chennai,Closed
+C0082,Online Shopping Fraud,2026-04-29 22:59:00,252660,Mumbai,Closed
+C0083,UPI Fraud,2026-03-01 19:39:00,216128,Pune,Closed
+C0084,Phishing,2026-03-18 12:50:00,193024,Delhi,Closed
+C0085,Investment Fraud,2026-06-04 20:34:00,82175,Coimbatore,Closed
+C0086,Online Shopping Fraud,2026-04-08 15:54:00,49085,Pune,Closed
+C0087,UPI Fraud,2026-05-21 22:20:00,94018,Kochi,Closed
+C0088,Online Shopping Fraud,2026-06-13 22:45:00,124776,Delhi,Closed
+C0089,Phishing,2026-04-28 19:17:00,101045,Hyderabad,Closed
+C0090,Job Scam,2026-06-27 19:20:00,80918,Kochi,Closed
+C0091,Online Shopping Fraud,2026-08-02 13:16:00,164960,Pune,Closed
+C0092,Investment Fraud,2026-07-24 08:24:00,42455,Coimbatore,Closed
+C0093,Investment Fraud,2026-08-10 13:08:00,83629,Kochi,Closed
+C0094,UPI Fraud,2026-01-02 13:30:00,146022,Mumbai,Closed
+C0095,Online Shopping Fraud,2026-02-21 20:12:00,50791,Bengaluru,Closed
+C0096,Job Scam,2026-05-03 19:52:00,69962,Mumbai,Closed
+C0097,Phishing,2026-01-26 08:49:00,118681,Hyderabad,Closed
+C0098,Investment Fraud,2026-01-06 11:42:00,114860,Bengaluru,Closed
+C0099,Online Shopping Fraud,2026-07-27 02:08:00,49307,Coimbatore,Closed
+C0100,Investment Fraud,2026-03-03 10:25:00,104766,Bengaluru,Closed
+C0101,Job Scam,2026-05-24 17:15:00,133139,Mumbai,Closed
+C0102,Phishing,2026-01-27 22:18:00,237843,Kochi,Closed
+C0103,Online Shopping Fraud,2026-03-13 20:22:00,33216,Bengaluru,Closed
+C0104,Job Scam,2026-08-14 03:10:00,150987,Kochi,Closed
+C0105,Job Scam,2026-01-12 03:23:00,150989,Chennai,Closed
+C0106,UPI Fraud,2026-01-14 13:31:00,157887,Hyderabad,Closed
+C0107,Phishing,2026-08-12 04:32:00,214513,Coimbatore,Closed
+C0108,Job Scam,2026-04-09 11:59:00,77707,Pune,Closed
+C0109,Job Scam,2026-01-29 08:13:00,53888,Coimbatore,Closed
+C0110,Online Shopping Fraud,2026-07-22 13:35:00,67821,Kochi,Closed
+C0111,Investment Fraud,2026-07-09 05:59:00,637081,Chennai,Closed
+C0112,Job Scam,2026-06-10 02:37:00,173153,Delhi,Closed
+C0113,Job Scam,2026-07-09 22:22:00,68554,Hyderabad,Closed
+C0114,Phishing,2026-07-09 21:15:00,105276,Delhi,Closed
+C0115,UPI Fraud,2026-01-16 04:51:00,56425,Coimbatore,Closed
+C0116,UPI Fraud,2026-03-22 13:24:00,55749,Pune,Closed
+C0117,Online Shopping Fraud,2026-04-02 13:31:00,103713,Chennai,Closed
+C0118,Job Scam,2026-08-20 22:02:00,555753,Bengaluru,Closed
+C0119,Online Shopping Fraud,2026-02-08 01:10:00,19787,Hyderabad,Closed
+C0120,UPI Fraud,2026-02-26 01:00:00,58894,Chennai,Closed
+C0121,Online Shopping Fraud,2026-07-27 16:48:00,53045,Kochi,Closed
+C0122,Investment Fraud,2026-08-09 12:27:00,149778,Pune,Closed
+C0123,Job Scam,2026-05-25 03:33:00,38280,Bengaluru,Closed
+C0124,Online Shopping Fraud,2026-04-07 11:59:00,68389,Mumbai,Closed
+C0125,UPI Fraud,2026-05-21 03:10:00,410564,Delhi,Closed
+C0126,Investment Fraud,2026-05-06 05:14:00,36469,Pune,Closed
+C0127,Investment Fraud,2026-06-19 09:02:00,546150,Mumbai,Closed
+C0128,Job Scam,2026-07-29 17:50:00,29656,Delhi,Closed
+C0129,Phishing,2026-02-21 21:24:00,275530,Kochi,Closed
+C0130,Online Shopping Fraud,2026-05-05 19:31:00,142625,Delhi,Closed
+C0131,UPI Fraud,2026-07-23 10:20:00,47637,Kochi,Closed
+C0132,Investment Fraud,2026-08-13 06:51:00,7479,Hyderabad,Closed
+C0133,Investment Fraud,2026-02-11 08:49:00,81705,Kochi,Closed
+C0134,UPI Fraud,2026-01-03 07:38:00,369111,Kochi,Closed
+C0135,UPI Fraud,2026-08-17 22:14:00,70325,Hyderabad,Closed
+C0136,Job Scam,2026-06-25 18:14:00,316774,Pune,Closed
+C0137,Online Shopping Fraud,2026-01-14 21:39:00,253585,Coimbatore,Closed
+C0138,Phishing,2026-07-21 03:00:00,45602,Mumbai,Closed
+C0139,Job Scam,2026-05-15 11:31:00,117262,Bengaluru,Closed
+C0140,Investment Fraud,2026-01-06 01:38:00,105743,Mumbai,Closed
+C0141,Investment Fraud,2026-03-17 05:28:00,109506,Delhi,Closed
+C0142,Investment Fraud,2026-07-28 05:57:00,355662,Kochi,Closed
+C0143,Job Scam,2026-08-06 16:19:00,550924,Bengaluru,Closed
+C0144,Job Scam,2026-08-16 14:02:00,88565,Chennai,Closed
+C0145,Phishing,2026-06-14 13:08:00,125206,Chennai,Closed
+C0146,Online Shopping Fraud,2026-04-28 15:09:00,84662,Delhi,Closed
+C0147,Investment Fraud,2026-03-29 12:24:00,62407,Hyderabad,Closed
+C0148,Job Scam,2026-04-11 07:21:00,133057,Hyderabad,Closed
+C0149,Investment Fraud,2026-07-28 04:22:00,205377,Mumbai,Closed
+C0150,UPI Fraud,2026-03-24 03:56:00,191609,Delhi,Closed
+C0151,Phishing,2026-07-09 19:10:00,51520,Mumbai,Closed
+C0152,Phishing,2026-03-17 15:19:00,181817,Coimbatore,Closed
+C0153,UPI Fraud,2026-04-02 02:29:00,98341,Hyderabad,Closed
+C0154,Online Shopping Fraud,2026-03-03 21:55:00,277911,Hyderabad,Closed
+C0155,Investment Fraud,2026-03-24 17:32:00,154910,Coimbatore,Closed
+C0156,Investment Fraud,2026-01-10 02:59:00,84017,Chennai,Closed
+C0157,Investment Fraud,2026-08-26 17:09:00,193543,Kochi,Closed
+C0158,Online Shopping Fraud,2026-06-02 13:27:00,284164,Coimbatore,Closed
+C0159,UPI Fraud,2026-05-29 16:37:00,172557,Pune,Closed
+C0160,Job Scam,2026-07-09 21:52:00,129606,Kochi,Closed
+C0161,Investment Fraud,2026-06-01 07:15:00,108068,Kochi,Closed
+C0162,UPI Fraud,2026-01-17 09:01:00,51966,Hyderabad,Closed
+C0163,Job Scam,2026-04-07 22:18:00,44717,Pune,Closed
+C0164,Investment Fraud,2026-04-03 20:32:00,252562,Hyderabad,Closed
+C0165,Job Scam,2026-01-22 07:23:00,164756,Delhi,Closed
+C0166,Online Shopping Fraud,2026-01-10 18:08:00,99025,Coimbatore,Closed
+C0167,Online Shopping Fraud,2026-07-25 23:46:00,106252,Coimbatore,Closed
+C0168,Phishing,2026-06-24 13:33:00,218168,Mumbai,Closed
+C0169,UPI Fraud,2026-01-23 02:11:00,51664,Hyderabad,Closed
+C0170,Investment Fraud,2026-04-03 08:09:00,139144,Bengaluru,Closed
+C0171,Online Shopping Fraud,2026-04-27 13:47:00,51800,Chennai,Closed
+C0172,Phishing,2026-02-26 23:06:00,121649,Pune,Closed
+C0173,UPI Fraud,2026-08-03 21:06:00,68603,Bengaluru,Closed
+C0174,Investment Fraud,2026-05-28 04:22:00,31396,Mumbai,Closed
+C0175,UPI Fraud,2026-02-23 14:18:00,56284,Pune,Closed
+C0176,Investment Fraud,2026-01-13 13:35:00,128239,Bengaluru,Closed
+C0177,UPI Fraud,2026-05-18 05:57:00,198601,Pune,Closed
+C0178,UPI Fraud,2026-08-16 15:11:00,98490,Delhi,Closed
+C0179,Phishing,2026-03-14 15:07:00,98529,Bengaluru,Closed
+C0180,Job Scam,2026-07-26 03:03:00,129456,Kochi,Closed
+C0181,Job Scam,2026-07-08 22:02:00,151509,Mumbai,Closed
+C0182,Phishing,2026-06-09 16:47:00,91666,Pune,Closed
+C0183,Job Scam,2026-05-08 12:40:00,173692,Chennai,Closed
+C0184,Phishing,2026-03-21 11:01:00,119634,Chennai,Closed
+C0185,Job Scam,2026-05-29 23:34:00,108127,Bengaluru,Closed
+C0186,Investment Fraud,2026-02-04 08:33:00,101980,Delhi,Closed
+C0187,Online Shopping Fraud,2026-07-04 02:09:00,319285,Mumbai,Closed
+C0188,Job Scam,2026-06-14 13:15:00,559876,Kochi,Closed
+C0189,UPI Fraud,2026-07-07 02:24:00,200944,Coimbatore,Closed
+C0190,Phishing,2026-03-28 22:26:00,576521,Delhi,Closed
+C0191,UPI Fraud,2026-03-19 00:13:00,51079,Hyderabad,Closed
+C0192,Investment Fraud,2026-08-23 07:25:00,18284,Pune,Closed
+C0193,Online Shopping Fraud,2026-03-23 18:25:00,54481,Bengaluru,Closed
+C0194,Job Scam,2026-07-15 04:36:00,131443,Hyderabad,Closed
+C0195,Phishing,2026-08-25 07:58:00,213900,Pune,Closed
+C0196,Job Scam,2026-03-08 18:43:00,48736,Bengaluru,Closed
+C0197,Job Scam,2026-08-15 22:09:00,34777,Hyderabad,Closed
+C0198,Investment Fraud,2026-03-07 13:12:00,256909,Kochi,Closed
+C0199,Phishing,2026-05-19 23:20:00,25397,Bengaluru,Closed
+C0200,Investment Fraud,2026-02-03 06:18:00,91244,Kochi,Closed
+C0201,Job Scam,2026-01-04 09:12:00,27927,Hyderabad,Closed
+C0202,Phishing,2026-07-31 01:26:00,100420,Mumbai,Closed
+C0203,Investment Fraud,2026-01-24 17:05:00,69763,Bengaluru,Closed
+C0204,Online Shopping Fraud,2026-07-22 17:27:00,42566,Bengaluru,Closed
+C0205,Job Scam,2026-02-25 20:05:00,110101,Delhi,Closed
+C0206,UPI Fraud,2026-01-10 03:10:00,176701,Pune,Closed
+C0207,Job Scam,2026-07-21 09:48:00,29308,Pune,Closed
+C0208,Phishing,2026-05-24 21:45:00,130454,Chennai,Closed
+C0209,Job Scam,2026-05-04 05:18:00,345879,Pune,Closed
+C0210,UPI Fraud,2026-07-20 10:31:00,256879,Chennai,Closed
+C0211,Online Shopping Fraud,2026-07-16 03:21:00,519968,Bengaluru,Closed
+C0212,UPI Fraud,2026-03-12 18:10:00,81940,Delhi,Closed
+C0213,Job Scam,2026-03-28 18:27:00,167581,Chennai,Closed
+C0214,Job Scam,2026-07-25 23:50:00,46211,Coimbatore,Closed
+C0215,UPI Fraud,2026-07-02 03:39:00,233203,Coimbatore,Closed
+C0216,Investment Fraud,2026-08-03 16:36:00,38805,Delhi,Closed
+C0217,UPI Fraud,2026-02-20 07:01:00,80611,Kochi,Closed
+C0218,Job Scam,2026-04-14 13:01:00,332638,Hyderabad,Closed
+C0219,Online Shopping Fraud,2026-04-17 15:33:00,367992,Mumbai,Closed
+C0220,Job Scam,2026-01-29 19:48:00,25596,Coimbatore,Closed
+C0221,UPI Fraud,2026-04-18 12:02:00,135968,Kochi,Closed
+C0222,UPI Fraud,2026-06-07 09:35:00,19129,Kochi,Closed
+C0223,Job Scam,2026-07-30 05:15:00,35219,Mumbai,Closed
+C0224,Investment Fraud,2026-05-16 23:18:00,134081,Coimbatore,Closed
+C0225,Job Scam,2026-01-27 23:23:00,66292,Pune,Closed
+C0226,Job Scam,2026-08-28 02:35:00,95109,Kochi,Closed
+C0227,Online Shopping Fraud,2026-01-19 02:24:00,45448,Kochi,Closed
+C0228,Investment Fraud,2026-01-15 21:34:00,65428,Pune,Closed
+C0229,UPI Fraud,2026-05-19 21:57:00,91793,Delhi,Closed
+C0230,Investment Fraud,2026-08-20 10:29:00,64215,Delhi,Closed
+C0231,Phishing,2026-02-06 14:10:00,481521,Pune,Closed
+C0232,Online Shopping Fraud,2026-06-13 09:14:00,57133,Delhi,Closed
+C0233,Job Scam,2026-08-05 16:11:00,91405,Bengaluru,Closed
+C0234,Online Shopping Fraud,2026-04-24 20:13:00,163449,Pune,Closed
+C0235,Investment Fraud,2026-06-27 19:24:00,65416,Kochi,Closed
+C0236,Phishing,2026-07-08 08:25:00,80248,Pune,Closed
+C0237,UPI Fraud,2026-05-03 22:50:00,29755,Bengaluru,Closed
+C0238,Online Shopping Fraud,2026-08-27 01:52:00,372838,Pune,Closed
+C0239,Phishing,2026-07-12 19:48:00,158604,Hyderabad,Closed
+C0240,Phishing,2026-01-20 03:43:00,1000000,Kochi,Closed
+C0241,Online Shopping Fraud,2026-08-12 07:55:00,90272,Pune,Closed
+C0242,Phishing,2026-05-18 09:44:00,27660,Bengaluru,Closed
+C0243,Job Scam,2026-07-16 04:57:00,54603,Pune,Closed
+C0244,Job Scam,2026-08-04 07:31:00,59615,Pune,Closed
+C0245,Investment Fraud,2026-06-04 17:27:00,385631,Pune,Closed
+C0246,Online Shopping Fraud,2026-03-27 02:15:00,99364,Mumbai,Closed
+C0247,Phishing,2026-07-09 15:49:00,106385,Chennai,Closed
+C0248,Online Shopping Fraud,2026-06-03 12:20:00,338210,Delhi,Closed
+C0249,Online Shopping Fraud,2026-02-16 03:13:00,43613,Bengaluru,Closed
+C0250,Online Shopping Fraud,2026-08-01 17:56:00,49633,Coimbatore,Closed
+C0251,Job Scam,2026-01-20 00:38:00,209791,Mumbai,Closed
+C0252,Investment Fraud,2026-06-21 11:59:00,32665,Coimbatore,Closed
+C0253,Phishing,2026-07-05 03:22:00,59421,Delhi,Closed
+C0254,Job Scam,2026-04-09 09:40:00,62256,Kochi,Closed
+C0255,Phishing,2026-04-14 04:11:00,103958,Mumbai,Closed
+C0256,UPI Fraud,2026-04-08 20:38:00,124155,Bengaluru,Closed
+C0257,Online Shopping Fraud,2026-01-09 06:02:00,82600,Kochi,Closed
+C0258,Investment Fraud,2026-03-14 10:56:00,63038,Chennai,Closed
+C0259,Investment Fraud,2026-01-22 23:29:00,149291,Kochi,Closed
+C0260,Job Scam,2026-05-27 03:20:00,108270,Coimbatore,Closed
+C0261,UPI Fraud,2026-06-01 11:29:00,26302,Coimbatore,Closed
+C0262,Phishing,2026-02-07 08:12:00,58854,Kochi,Closed
+C0263,Online Shopping Fraud,2026-07-25 09:28:00,54302,Bengaluru,Closed
+C0264,UPI Fraud,2026-05-29 17:55:00,27197,Delhi,Closed
+C0265,Job Scam,2026-05-31 01:54:00,123093,Pune,Closed
+C0266,Online Shopping Fraud,2026-03-03 08:38:00,166674,Mumbai,Closed
+C0267,Job Scam,2026-08-04 11:21:00,94850,Coimbatore,Closed
+C0268,Phishing,2026-01-22 03:46:00,59364,Hyderabad,Closed
+C0269,Online Shopping Fraud,2026-05-23 22:05:00,50241,Hyderabad,Closed
+C0270,Job Scam,2026-04-27 22:59:00,223677,Coimbatore,Closed
+C0271,Phishing,2026-06-08 15:23:00,195141,Pune,Closed
+C0272,Investment Fraud,2026-08-17 19:05:00,152782,Bengaluru,Closed
+C0273,Job Scam,2026-02-12 10:46:00,13844,Bengaluru,Closed
+C0274,Online Shopping Fraud,2026-05-25 22:38:00,158670,Hyderabad,Closed
+C0275,Job Scam,2026-07-01 22:30:00,134570,Delhi,Closed
+C0276,Job Scam,2026-02-11 13:15:00,107172,Kochi,Closed
+C0277,Investment Fraud,2026-06-11 14:32:00,254524,Chennai,Closed
+C0278,Online Shopping Fraud,2026-05-12 03:40:00,131007,Mumbai,Closed
+C0279,Phishing,2026-07-27 06:23:00,67699,Bengaluru,Closed
+C0280,Job Scam,2026-06-07 12:18:00,137102,Kochi,Closed
+C0281,Job Scam,2026-02-07 16:10:00,126089,Chennai,Closed
+C0282,UPI Fraud,2026-06-02 18:55:00,200751,Chennai,Closed
+C0283,UPI Fraud,2026-02-26 20:03:00,261423,Delhi,Closed
+C0284,Investment Fraud,2026-02-23 19:00:00,19583,Chennai,Closed
+C0285,Investment Fraud,2026-04-23 15:36:00,22388,Coimbatore,Closed
+C0286,Investment Fraud,2026-07-29 04:42:00,101484,Hyderabad,Closed
+C0287,Investment Fraud,2026-01-03 17:39:00,129893,Coimbatore,Closed
+C0288,Phishing,2026-04-14 15:13:00,194162,Delhi,Closed
+C0289,Online Shopping Fraud,2026-07-05 14:25:00,120742,Coimbatore,Closed
+C0290,Phishing,2026-07-20 19:33:00,30639,Mumbai,Closed
+C0291,UPI Fraud,2026-07-19 13:28:00,131100,Delhi,Closed
+C0292,UPI Fraud,2026-02-09 04:01:00,165901,Kochi,Closed
+C0293,Job Scam,2026-02-05 17:13:00,115660,Delhi,Closed
+C0294,Investment Fraud,2026-05-02 17:09:00,69247,Coimbatore,Closed
+C0295,Online Shopping Fraud,2026-01-30 03:23:00,194306,Bengaluru,Closed
+C0296,Online Shopping Fraud,2026-05-07 17:21:00,105892,Mumbai,Closed
+C0297,Online Shopping Fraud,2026-01-22 21:42:00,146694,Hyderabad,Closed
+C0298,UPI Fraud,2026-08-04 17:25:00,229339,Chennai,Closed
+C0299,Phishing,2026-03-24 11:39:00,80581,Delhi,Closed
+C0300,Investment Fraud,2026-08-03 23:47:00,70086,Coimbatore,Closed
+C0301,Online Shopping Fraud,2026-07-09 19:18:00,183233,Bengaluru,Closed
+C0302,Investment Fraud,2026-06-22 22:11:00,200508,Pune,Closed
+C0303,Investment Fraud,2026-01-17 21:22:00,139200,Chennai,Closed
+C0304,Job Scam,2026-06-06 21:22:00,53846,Coimbatore,Closed
+C0305,Job Scam,2026-07-20 00:53:00,24099,Pune,Closed
+C0306,UPI Fraud,2026-05-12 22:14:00,168791,Kochi,Closed
+C0307,Job Scam,2026-05-02 23:42:00,125103,Pune,Closed
+C0308,Investment Fraud,2026-01-08 18:56:00,707524,Bengaluru,Closed
+C0309,Phishing,2026-01-29 11:33:00,109145,Kochi,Closed
+C0310,Online Shopping Fraud,2026-03-13 04:18:00,146933,Delhi,Closed
+C0311,Investment Fraud,2026-06-13 19:55:00,53132,Hyderabad,Closed
+C0312,Job Scam,2026-04-20 15:23:00,450694,Mumbai,Closed
+C0313,UPI Fraud,2026-02-05 18:32:00,357708,Chennai,Closed
+C0314,Job Scam,2026-07-17 23:49:00,45308,Hyderabad,Closed
+C0315,Online Shopping Fraud,2026-08-22 20:44:00,104558,Mumbai,Closed
+C0316,Job Scam,2026-03-25 14:01:00,25821,Bengaluru,Closed
+C0317,Phishing,2026-02-21 00:15:00,88125,Delhi,Closed
+C0318,Job Scam,2026-08-06 05:58:00,44499,Hyderabad,Closed
+C0319,UPI Fraud,2026-05-22 04:08:00,193196,Coimbatore,Closed
+C0320,UPI Fraud,2026-07-01 04:39:00,35630,Delhi,Closed
+C0321,Online Shopping Fraud,2026-06-28 01:37:00,76442,Coimbatore,Closed
+C0322,Online Shopping Fraud,2026-03-25 11:00:00,81247,Hyderabad,Closed
+C0323,Online Shopping Fraud,2026-04-16 10:17:00,82152,Delhi,Closed
+C0324,Job Scam,2026-08-22 19:58:00,11561,Mumbai,Closed
+C0325,Phishing,2026-04-24 11:13:00,83131,Kochi,Closed
+C0326,Phishing,2026-02-19 01:46:00,438927,Hyderabad,Closed
+C0327,Investment Fraud,2026-07-20 16:25:00,80645,Pune,Closed
+C0328,Investment Fraud,2026-08-23 06:28:00,783568,Chennai,Closed
+C0329,Phishing,2026-08-26 14:28:00,101120,Hyderabad,Closed
+C0330,Job Scam,2026-05-09 18:11:00,117171,Kochi,Closed
+C0331,Investment Fraud,2026-02-16 17:09:00,63195,Delhi,Closed
+C0332,UPI Fraud,2026-01-03 02:05:00,97413,Chennai,Closed
+C0333,UPI Fraud,2026-06-06 01:57:00,56536,Pune,Closed
+C0334,Investment Fraud,2026-07-28 10:59:00,81547,Pune,Closed
+C0335,Online Shopping Fraud,2026-08-11 17:45:00,11993,Chennai,Closed
+C0336,Job Scam,2026-03-07 22:43:00,270978,Coimbatore,Closed
+C0337,Phishing,2026-07-09 20:12:00,76021,Coimbatore,Closed
+C0338,UPI Fraud,2026-02-07 20:31:00,32432,Bengaluru,Closed
+C0339,Job Scam,2026-01-14 06:06:00,41128,Mumbai,Closed
+C0340,Phishing,2026-02-11 19:42:00,211391,Delhi,Closed
+C0341,Job Scam,2026-02-08 21:24:00,178128,Hyderabad,Closed
+C0342,Job Scam,2026-01-22 04:09:00,65729,Hyderabad,Closed
+C0343,Job Scam,2026-05-18 06:18:00,37617,Chennai,Closed
+C0344,Online Shopping Fraud,2026-03-18 12:24:00,82509,Bengaluru,Closed
+C0345,UPI Fraud,2026-06-01 12:15:00,176608,Bengaluru,Closed
+C0346,UPI Fraud,2026-03-05 02:38:00,74918,Coimbatore,Closed
+C0347,Phishing,2026-08-25 04:12:00,42111,Kochi,Closed
+C0348,Job Scam,2026-06-05 14:16:00,160717,Bengaluru,Closed
+C0349,Job Scam,2026-08-27 04:39:00,129810,Delhi,Closed
+C0350,Phishing,2026-06-22 17:52:00,209430,Bengaluru,Closed
+C0351,Online Shopping Fraud,2026-07-08 21:32:00,65824,Mumbai,Closed
+C0352,Online Shopping Fraud,2026-01-22 18:03:00,56922,Bengaluru,Closed
+C0353,Investment Fraud,2026-07-10 11:18:00,28785,Bengaluru,Closed
+C0354,Phishing,2026-07-16 23:21:00,35903,Chennai,Closed
+C0355,Online Shopping Fraud,2026-02-16 06:26:00,18908,Bengaluru,Closed
+C0356,UPI Fraud,2026-01-29 09:11:00,118389,Kochi,Closed
+C0357,UPI Fraud,2026-02-03 11:18:00,64665,Pune,Closed
+C0358,Job Scam,2026-02-02 06:32:00,97034,Kochi,Closed
+C0359,Online Shopping Fraud,2026-05-11 13:06:00,109568,Mumbai,Closed
+C0360,Phishing,2026-01-14 21:55:00,74759,Hyderabad,Closed
+C0361,UPI Fraud,2026-04-02 07:29:00,127920,Bengaluru,Closed
+C0362,Phishing,2026-01-24 16:55:00,34008,Delhi,Closed
+C0363,Online Shopping Fraud,2026-07-06 00:24:00,114647,Coimbatore,Closed
+C0364,Online Shopping Fraud,2026-03-10 21:25:00,101485,Coimbatore,Closed
+C0365,Job Scam,2026-08-15 03:50:00,64933,Bengaluru,Closed
+C0366,UPI Fraud,2026-03-19 21:19:00,116961,Pune,Closed
+C0367,Phishing,2026-07-06 09:30:00,138624,Coimbatore,Closed
+C0368,Investment Fraud,2026-07-27 07:29:00,227806,Hyderabad,Closed
+C0369,Investment Fraud,2026-01-14 23:56:00,122730,Coimbatore,Closed
+C0370,Job Scam,2026-02-11 00:22:00,379005,Mumbai,Closed
+C0371,UPI Fraud,2026-04-19 06:38:00,22930,Coimbatore,Closed
+C0372,Online Shopping Fraud,2026-03-10 02:54:00,60661,Chennai,Closed
+C0373,Phishing,2026-06-10 03:11:00,151304,Hyderabad,Closed
+C0374,Online Shopping Fraud,2026-07-16 10:33:00,116115,Coimbatore,Closed
+C0375,UPI Fraud,2026-06-09 10:42:00,61310,Coimbatore,Closed
+C0376,Job Scam,2026-08-25 13:32:00,47778,Hyderabad,Closed
+C0377,Phishing,2026-03-06 21:41:00,45808,Coimbatore,Closed
+C0378,Job Scam,2026-06-26 05:29:00,46789,Pune,Closed
+C0379,Investment Fraud,2026-05-29 03:19:00,148387,Hyderabad,Closed
+C0380,Job Scam,2026-08-01 18:30:00,50324,Pune,Closed
+C0381,Investment Fraud,2026-08-27 14:02:00,63096,Delhi,Closed
+C0382,Job Scam,2026-08-22 15:50:00,775290,Mumbai,Closed
+C0383,UPI Fraud,2026-06-03 10:50:00,250783,Bengaluru,Closed
+C0384,Investment Fraud,2026-01-07 14:55:00,97239,Bengaluru,Closed
+C0385,Investment Fraud,2026-04-07 08:53:00,60557,Kochi,Closed
+C0386,Job Scam,2026-05-06 00:44:00,176156,Coimbatore,Closed
+C0387,Investment Fraud,2026-02-25 12:27:00,165852,Hyderabad,Closed
+C0388,UPI Fraud,2026-08-25 06:35:00,164451,Bengaluru,Closed
+C0389,Investment Fraud,2026-08-18 21:35:00,55894,Delhi,Closed
+C0390,UPI Fraud,2026-02-01 00:19:00,94219,Chennai,Closed
+C0391,Investment Fraud,2026-03-12 14:22:00,115276,Coimbatore,Closed
+C0392,Online Shopping Fraud,2026-03-22 16:51:00,135548,Chennai,Closed
+C0393,UPI Fraud,2026-01-20 09:00:00,156491,Mumbai,Closed
+C0394,Phishing,2026-04-01 19:03:00,194865,Hyderabad,Closed
+C0395,Phishing,2026-04-27 22:22:00,94541,Coimbatore,Closed
+C0396,Job Scam,2026-06-19 18:07:00,141014,Pune,Closed
+C0397,Phishing,2026-01-13 22:03:00,124267,Coimbatore,Closed
+C0398,Investment Fraud,2026-03-15 00:06:00,42111,Bengaluru,Closed
+C0399,Online Shopping Fraud,2026-07-29 00:35:00,96885,Kochi,Closed
+C0400,Online Shopping Fraud,2026-07-18 22:39:00,102291,Delhi,Closed
+C0401,UPI Fraud,2026-06-13 03:41:00,211832,Delhi,Closed
+C0402,Phishing,2026-04-30 23:14:00,107993,Kochi,Closed
+C0403,Online Shopping Fraud,2026-08-08 17:08:00,70638,Bengaluru,Closed
+C0404,Job Scam,2026-02-14 19:14:00,119447,Pune,Closed
+C0405,UPI Fraud,2026-04-02 15:59:00,273082,Mumbai,Closed
+C0406,UPI Fraud,2026-06-02 03:19:00,86114,Delhi,Closed
+C0407,Online Shopping Fraud,2026-06-04 04:07:00,318223,Coimbatore,Closed
+C0408,Phishing,2026-02-17 04:50:00,228296,Bengaluru,Closed
+C0409,Online Shopping Fraud,2026-06-15 22:12:00,123817,Delhi,Closed
+C0410,Phishing,2026-03-28 15:41:00,106804,Kochi,Closed
+C0411,Job Scam,2026-05-08 23:11:00,66111,Pune,Closed
+C0412,Online Shopping Fraud,2026-02-04 21:45:00,629099,Hyderabad,Closed
+C0413,UPI Fraud,2026-08-10 02:27:00,70019,Bengaluru,Closed
+C0414,UPI Fraud,2026-08-12 05:23:00,353834,Coimbatore,Closed
+C0415,Investment Fraud,2026-07-07 11:15:00,71451,Hyderabad,Closed
+C0416,Online Shopping Fraud,2026-02-20 18:14:00,34110,Mumbai,Closed
+C0417,Online Shopping Fraud,2026-03-01 03:08:00,44784,Chennai,Closed
+C0418,Investment Fraud,2026-02-01 22:24:00,97263,Coimbatore,Closed
+C0419,Phishing,2026-02-05 17:46:00,345699,Kochi,Closed
+C0420,Investment Fraud,2026-04-09 15:09:00,219780,Hyderabad,Closed
+C0421,Investment Fraud,2026-08-10 14:35:00,96120,Coimbatore,Closed
+C0422,Online Shopping Fraud,2026-07-20 22:17:00,40731,Chennai,Closed
+C0423,Online Shopping Fraud,2026-01-21 09:26:00,114243,Pune,Closed
+C0424,Investment Fraud,2026-05-22 07:46:00,126028,Kochi,Closed
+C0425,Job Scam,2026-04-03 11:26:00,60038,Pune,Closed
+C0426,Job Scam,2026-06-11 18:42:00,60743,Coimbatore,Closed
+C0427,Job Scam,2026-03-03 15:11:00,60054,Pune,Closed
+C0428,UPI Fraud,2026-06-05 08:53:00,311554,Pune,Closed
+C0429,UPI Fraud,2026-04-10 14:24:00,51381,Bengaluru,Closed
+C0430,Job Scam,2026-06-16 15:28:00,64289,Pune,Closed
+C0431,UPI Fraud,2026-01-31 09:49:00,117625,Delhi,Closed
+C0432,Investment Fraud,2026-08-24 03:44:00,344872,Delhi,Closed
+C0433,Investment Fraud,2026-06-19 21:22:00,61248,Chennai,Closed
+C0434,Investment Fraud,2026-07-01 06:04:00,125695,Mumbai,Closed
+C0435,Job Scam,2026-03-05 22:36:00,169356,Coimbatore,Closed
+C0436,Job Scam,2026-04-11 15:05:00,86800,Mumbai,Closed
+C0437,Investment Fraud,2026-07-16 18:52:00,33172,Chennai,Closed
+C0438,Phishing,2026-05-05 01:26:00,97384,Kochi,Closed
+C0439,UPI Fraud,2026-01-06 10:18:00,66094,Delhi,Closed
+C0440,Phishing,2026-01-07 13:33:00,98694,Delhi,Closed
+C0441,Online Shopping Fraud,2026-01-10 10:58:00,754998,Mumbai,Closed
+C0442,Phishing,2026-07-13 00:27:00,67600,Coimbatore,Closed
+C0443,Phishing,2026-03-16 17:51:00,172549,Pune,Closed
+C0444,Investment Fraud,2026-06-02 05:20:00,159542,Pune,Closed
+C0445,Job Scam,2026-05-14 20:02:00,160403,Pune,Closed
+C0446,Online Shopping Fraud,2026-01-31 08:13:00,192781,Mumbai,Closed
+C0447,Online Shopping Fraud,2026-04-19 07:17:00,234747,Hyderabad,Closed
+C0448,Job Scam,2026-06-11 15:30:00,302142,Bengaluru,Closed
+C0449,Online Shopping Fraud,2026-05-31 12:30:00,87485,Chennai,Closed
+C0450,Phishing,2026-02-16 02:56:00,262533,Pune,Closed
+C0451,UPI Fraud,2026-02-05 19:17:00,134304,Mumbai,Closed
+C0452,UPI Fraud,2026-06-29 14:48:00,102326,Kochi,Closed
+C0453,Online Shopping Fraud,2026-04-07 22:28:00,116518,Chennai,Closed
+C0454,Job Scam,2026-06-03 11:31:00,33692,Mumbai,Closed
+C0455,Phishing,2026-04-28 13:30:00,167596,Delhi,Closed
+C0456,Phishing,2026-06-25 13:27:00,78174,Delhi,Closed
+C0457,Investment Fraud,2026-05-08 06:24:00,122080,Hyderabad,Closed
+C0458,Phishing,2026-07-26 00:25:00,92659,Pune,Closed
+C0459,Job Scam,2026-04-19 18:08:00,162631,Coimbatore,Closed
+C0460,UPI Fraud,2026-01-07 18:31:00,69966,Bengaluru,Closed
+C0461,Online Shopping Fraud,2026-07-31 17:52:00,236057,Delhi,Closed
+C0462,Investment Fraud,2026-07-04 22:17:00,111223,Mumbai,Closed
+C0463,Phishing,2026-06-04 13:36:00,260136,Kochi,Closed
+C0464,UPI Fraud,2026-05-23 00:25:00,63945,Pune,Closed
+C0465,Phishing,2026-06-09 19:57:00,349879,Pune,Closed
+C0466,UPI Fraud,2026-01-28 22:40:00,64136,Mumbai,Closed
+C0467,Online Shopping Fraud,2026-02-27 04:43:00,31398,Coimbatore,Closed
+C0468,Online Shopping Fraud,2026-03-04 23:20:00,142192,Delhi,Closed
+C0469,Investment Fraud,2026-03-08 18:20:00,44176,Chennai,Closed
+C0470,Investment Fraud,2026-03-26 21:54:00,121536,Delhi,Closed
+C0471,Phishing,2026-07-26 23:43:00,35906,Bengaluru,Closed
+C0472,Online Shopping Fraud,2026-06-15 05:46:00,168229,Delhi,Closed
+C0473,UPI Fraud,2026-06-10 03:22:00,438114,Coimbatore,Closed
+C0474,Phishing,2026-01-16 07:05:00,29510,Hyderabad,Closed
+C0475,Job Scam,2026-06-03 09:14:00,96418,Bengaluru,Closed
+C0476,Investment Fraud,2026-06-22 10:23:00,82449,Delhi,Closed
+C0477,Job Scam,2026-03-25 17:37:00,36742,Mumbai,Closed
+C0478,Phishing,2026-06-30 06:54:00,93639,Kochi,Closed
+C0479,Phishing,2026-08-21 16:37:00,131545,Kochi,Closed
+C0480,UPI Fraud,2026-07-21 23:52:00,157745,Pune,Closed
+C0481,Online Shopping Fraud,2026-05-06 09:38:00,167226,Pune,Closed
+C0482,UPI Fraud,2026-08-14 05:11:00,117024,Coimbatore,Closed
+C0483,Phishing,2026-05-17 15:37:00,93072,Pune,Closed
+C0484,UPI Fraud,2026-08-28 07:24:00,58209,Chennai,Closed
+C0485,Online Shopping Fraud,2026-01-31 16:41:00,96838,Pune,Closed
+C0486,Job Scam,2026-06-16 21:58:00,110791,Delhi,Closed
+C0487,UPI Fraud,2026-07-09 22:33:00,195915,Pune,Closed
+C0488,Online Shopping Fraud,2026-07-15 20:25:00,69980,Bengaluru,Closed
+C0489,Online Shopping Fraud,2026-05-03 16:49:00,69639,Hyderabad,Closed
+C0490,UPI Fraud,2026-03-10 04:29:00,28164,Mumbai,Closed
+C0491,Online Shopping Fraud,2026-06-09 08:58:00,187505,Delhi,Closed
+C0492,Online Shopping Fraud,2026-06-14 00:52:00,46135,Bengaluru,Closed
+C0493,Phishing,2026-02-26 00:34:00,99712,Pune,Closed
+C0494,Job Scam,2026-04-13 10:07:00,332915,Mumbai,Closed
+C0495,Job Scam,2026-03-12 04:47:00,83797,Coimbatore,Closed
+C0496,UPI Fraud,2026-07-13 11:39:00,118140,Chennai,Closed
+C0497,UPI Fraud,2026-04-18 22:45:00,82058,Pune,Closed
+C0498,Investment Fraud,2026-08-03 21:56:00,44874,Coimbatore,Closed
+C0499,Investment Fraud,2026-04-21 22:50:00,421289,Hyderabad,Closed
+C0500,UPI Fraud,2026-05-23 18:40:00,63321,Mumbai,Closed
+C0501,Phishing,2026-08-18 12:20:00,306327,Bengaluru,Active
+C0502,Online Shopping Fraud,2026-01-27 10:01:00,104886,Coimbatore,Active
+C0503,Job Scam,2026-05-26 06:33:00,174818,Bengaluru,Active
+C0504,Phishing,2026-06-15 18:54:00,204654,Delhi,Active
+C0505,Job Scam,2026-06-30 04:33:00,231553,Hyderabad,Active
+C0506,Job Scam,2026-01-08 22:09:00,286886,Coimbatore,Active
+C0507,Job Scam,2026-01-21 11:35:00,526040,Coimbatore,Active
+C0508,Job Scam,2026-05-27 06:02:00,400991,Bengaluru,Active
+C0509,Investment Fraud,2026-04-10 15:17:00,59384,Coimbatore,Active
+C0510,Job Scam,2026-06-10 14:33:00,77392,Mumbai,Active
+C0511,Job Scam,2026-01-14 23:21:00,151932,Bengaluru,Active
+C0512,Investment Fraud,2026-04-06 13:43:00,98070,Bengaluru,Active
+C0513,Investment Fraud,2026-06-27 13:29:00,398299,Delhi,Active
+C0514,Investment Fraud,2026-07-30 06:53:00,103086,Delhi,Active
+C0515,Investment Fraud,2026-02-23 10:51:00,163364,Chennai,Active
+C0516,Online Shopping Fraud,2026-05-16 09:49:00,81391,Bengaluru,Active
+C0517,Investment Fraud,2026-07-16 19:21:00,137627,Hyderabad,Active
+C0518,UPI Fraud,2026-04-27 18:18:00,67939,Hyderabad,Active
+C0519,Job Scam,2026-08-15 14:15:00,37508,Delhi,Active
+C0520,Job Scam,2026-05-22 05:20:00,119669,Mumbai,Active
+C0521,Investment Fraud,2026-06-06 18:06:00,384641,Coimbatore,Active
+C0522,Phishing,2026-05-02 11:33:00,237012,Kochi,Active
+C0523,Online Shopping Fraud,2026-02-13 00:40:00,87100,Pune,Active
+C0524,UPI Fraud,2026-02-19 17:31:00,168515,Chennai,Active
+C0525,Job Scam,2026-03-11 23:47:00,325838,Pune,Active
+C0526,Investment Fraud,2026-02-15 12:44:00,60625,Bengaluru,Active
+C0527,Phishing,2026-07-10 02:46:00,148471,Coimbatore,Active
+C0528,Online Shopping Fraud,2026-03-15 23:04:00,64387,Chennai,Active
+C0529,UPI Fraud,2026-06-17 23:19:00,97976,Kochi,Active
+C0530,Job Scam,2026-05-03 12:38:00,154477,Kochi,Active
+C0531,Phishing,2026-07-22 22:35:00,185402,Bengaluru,Active
+C0532,Investment Fraud,2026-04-01 03:37:00,250681,Pune,Active
+C0533,Phishing,2026-03-25 23:29:00,74829,Pune,Active
+C0534,Investment Fraud,2026-08-19 09:04:00,35496,Delhi,Active
+C0535,UPI Fraud,2026-07-24 17:12:00,68786,Hyderabad,Active
+C0536,Investment Fraud,2026-03-24 00:34:00,96315,Chennai,Active
+C0537,Investment Fraud,2026-02-05 05:10:00,106338,Bengaluru,Active
+C0538,Investment Fraud,2026-06-24 19:02:00,221890,Chennai,Active
+C0539,Investment Fraud,2026-01-02 11:55:00,28786,Pune,Active
+C0540,Online Shopping Fraud,2026-01-08 15:12:00,332213,Mumbai,Active
+C0541,Online Shopping Fraud,2026-03-06 07:24:00,75659,Chennai,Active
+C0542,UPI Fraud,2026-03-12 00:00:00,77313,Delhi,Active
+C0543,Job Scam,2026-07-05 08:00:00,135736,Kochi,Active
+C0544,Phishing,2026-06-21 09:16:00,228011,Hyderabad,Active
+C0545,Phishing,2026-07-16 09:58:00,81282,Delhi,Active
+C0546,Online Shopping Fraud,2026-05-14 03:32:00,94432,Chennai,Active
+C0547,Investment Fraud,2026-07-12 06:25:00,178979,Coimbatore,Active
+C0548,Online Shopping Fraud,2026-05-31 16:19:00,179698,Chennai,Active
+C0549,Job Scam,2026-03-03 20:36:00,106492,Chennai,Active
+C0550,UPI Fraud,2026-08-19 15:25:00,208144,Bengaluru,Active
+C0551,Online Shopping Fraud,2026-08-10 23:18:00,222200,Delhi,Active
+C0552,UPI Fraud,2026-05-02 01:08:00,531588,Mumbai,Active
+C0553,Job Scam,2026-07-11 23:56:00,242673,Chennai,Active
+C0554,Investment Fraud,2026-05-11 04:57:00,163267,Delhi,Active
+C0555,Job Scam,2026-04-06 13:20:00,60712,Hyderabad,Active
+C0556,UPI Fraud,2026-03-13 13:25:00,85851,Delhi,Active
+C0557,Phishing,2026-08-26 11:03:00,200582,Hyderabad,Active
+C0558,Phishing,2026-03-16 21:47:00,112787,Hyderabad,Active
+C0559,UPI Fraud,2026-05-21 19:55:00,683962,Mumbai,Active
+C0560,Job Scam,2026-07-10 23:26:00,117454,Hyderabad,Active
+C0561,Phishing,2026-05-30 10:48:00,242158,Bengaluru,Active
+C0562,Job Scam,2026-07-02 15:09:00,166693,Bengaluru,Active
+C0563,Phishing,2026-07-03 09:55:00,369413,Mumbai,Active
+C0564,Online Shopping Fraud,2026-05-13 20:26:00,127393,Hyderabad,Active
+C0565,Phishing,2026-08-11 06:20:00,94998,Mumbai,Active
+C0566,Phishing,2026-05-22 12:35:00,129315,Bengaluru,Active
+C0567,Phishing,2026-07-01 03:45:00,363630,Bengaluru,Active
+C0568,UPI Fraud,2026-07-03 13:49:00,82256,Mumbai,Active
+C0569,UPI Fraud,2026-07-14 04:46:00,258978,Mumbai,Active
+C0570,Job Scam,2026-08-16 22:18:00,161271,Coimbatore,Active
+C0571,Online Shopping Fraud,2026-04-05 01:44:00,78816,Coimbatore,Active
+C0572,Phishing,2026-04-18 19:25:00,88688,Mumbai,Active
+C0573,UPI Fraud,2026-04-06 16:00:00,87070,Pune,Active
+C0574,Phishing,2026-02-07 18:56:00,41602,Hyderabad,Active
+C0575,Job Scam,2026-02-09 14:08:00,358086,Chennai,Active
+C0576,Phishing,2026-07-23 23:48:00,45243,Chennai,Active
+C0577,Phishing,2026-06-07 00:00:00,59979,Bengaluru,Active
+C0578,Job Scam,2026-06-30 13:41:00,371958,Hyderabad,Active
+C0579,Online Shopping Fraud,2026-06-21 22:55:00,57664,Kochi,Active
+C0580,Online Shopping Fraud,2026-06-18 10:44:00,219331,Bengaluru,Active
+C0581,Online Shopping Fraud,2026-04-03 11:42:00,13539,Pune,Active
+C0582,Investment Fraud,2026-04-15 20:06:00,32901,Delhi,Active
+C0583,Investment Fraud,2026-08-29 14:13:00,226609,Kochi,Active
+C0584,Investment Fraud,2026-05-03 00:42:00,302653,Bengaluru,Active
+C0585,Online Shopping Fraud,2026-03-28 04:08:00,160930,Delhi,Active
+C0586,Online Shopping Fraud,2026-07-28 23:32:00,183518,Hyderabad,Active
+C0587,Investment Fraud,2026-05-27 12:07:00,108693,Pune,Active
+C0588,UPI Fraud,2026-02-05 23:45:00,54707,Mumbai,Active
+C0589,UPI Fraud,2026-03-09 11:23:00,25811,Coimbatore,Active
+C0590,UPI Fraud,2026-01-24 22:27:00,45344,Kochi,Active
+C0591,Investment Fraud,2026-06-29 03:32:00,115478,Delhi,Active
+C0592,Job Scam,2026-03-30 04:38:00,208475,Mumbai,Active
+C0593,Phishing,2026-06-25 13:28:00,45307,Hyderabad,Active
+C0594,Phishing,2026-04-01 06:25:00,45566,Delhi,Active
+C0595,Job Scam,2026-03-12 16:16:00,155277,Kochi,Active
+C0596,Phishing,2026-08-15 03:39:00,108795,Kochi,Active
+C0597,Job Scam,2026-05-31 06:48:00,61810,Pune,Active
+C0598,Phishing,2026-04-16 01:29:00,27960,Delhi,Active
+C0599,Investment Fraud,2026-06-11 08:13:00,98441,Delhi,Active
+C0600,Investment Fraud,2026-06-10 19:30:00,119617,Kochi,Active
