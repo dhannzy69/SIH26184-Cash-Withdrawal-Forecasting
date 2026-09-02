@@ -21,6 +21,33 @@ export default function App() {
   const [loading, setLoading] = useState(true);
   const [isSimulating, setIsSimulating] = useState(false);
 
+  // Authenticated Officer State
+  const [currentUser, setCurrentUser] = useState(() => {
+    const saved = localStorage.getItem('sih_officer');
+    if (saved) {
+      try { return JSON.parse(saved); } catch (e) {}
+    }
+    return {
+      username: 'officer_sharma',
+      full_name: 'Inspector Vikram Sharma',
+      badge_number: 'CYBER-108',
+      role: 'INVESTIGATOR'
+    };
+  });
+
+  const handleLogin = (user, token) => {
+    setCurrentUser(user);
+    localStorage.setItem('sih_officer', JSON.stringify(user));
+    if (token) localStorage.setItem('sih_token', token);
+  };
+
+  const handleLogout = () => {
+    setCurrentUser(null);
+    localStorage.removeItem('sih_officer');
+    localStorage.removeItem('sih_token');
+  };
+
+
   // Initial Load: Health, Cases, and Initial Alerts
   useEffect(() => {
     async function initPortal() {
@@ -119,7 +146,13 @@ export default function App() {
 
   return (
     <div style={{ maxWidth: '1440px', margin: '0 auto', padding: '0.5rem 1rem 3rem 1rem' }}>
-      <Header systemStatus={systemOnline} />
+      <Header
+        systemStatus={systemOnline}
+        currentUser={currentUser}
+        onLogin={handleLogin}
+        onLogout={handleLogout}
+      />
+
 
       {loading ? (
         <div style={{ textAlign: 'center', padding: '4rem', color: '#38bdf8' }}>
