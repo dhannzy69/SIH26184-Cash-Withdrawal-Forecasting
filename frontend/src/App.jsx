@@ -143,6 +143,7 @@ export default function App() {
   const currentCaseMeta = caseDossier ? (caseDossier.case_details || caseDossier) : null;
   const currentTransactions = (caseDossier && (caseDossier.transactions || caseDossier.transaction_history)) || [];
   const currentAccounts = (caseDossier && caseDossier.accounts) || [];
+  const userRole = currentUser?.role || 'INVESTIGATOR';
 
   return (
     <div style={{ maxWidth: '1440px', margin: '0 auto', padding: '0.5rem 1rem 3rem 1rem' }}>
@@ -153,6 +154,84 @@ export default function App() {
         onLogout={handleLogout}
       />
 
+      {/* Role-Specific Command Bar */}
+      {userRole === 'ADMIN' && (
+        <div style={{
+          background: 'linear-gradient(135deg, rgba(139, 92, 246, 0.15), rgba(30, 41, 59, 0.8))',
+          border: '1px solid rgba(168, 85, 247, 0.4)',
+          borderRadius: 'var(--radius-md)',
+          padding: '0.85rem 1.25rem',
+          marginBottom: '1.25rem',
+          display: 'grid',
+          gridTemplateColumns: 'repeat(4, 1fr)',
+          gap: '1rem'
+        }}>
+          <div>
+            <div style={{ fontSize: '0.68rem', color: '#c084fc', textTransform: 'uppercase', fontWeight: 700 }}>
+              CENTRAL COMMAND OVERSIGHT
+            </div>
+            <div style={{ fontSize: '1.15rem', fontWeight: 800, color: '#f8fafc' }}>
+              600 Total Complaints
+            </div>
+            <div style={{ fontSize: '0.7rem', color: 'var(--text-dim)' }}>Across 12 States</div>
+          </div>
+          <div>
+            <div style={{ fontSize: '0.68rem', color: '#c084fc', textTransform: 'uppercase', fontWeight: 700 }}>
+              DISPUTED CAPITAL MONITORED
+            </div>
+            <div style={{ fontSize: '1.15rem', fontWeight: 800, color: '#38bdf8' }}>
+              ₹8.92 Crore
+            </div>
+            <div style={{ fontSize: '0.7rem', color: 'var(--text-dim)' }}>Active Laundering Streams</div>
+          </div>
+          <div>
+            <div style={{ fontSize: '0.68rem', color: '#c084fc', textTransform: 'uppercase', fontWeight: 700 }}>
+              SURVEILLANCE ZONES
+            </div>
+            <div style={{ fontSize: '1.15rem', fontWeight: 800, color: '#34d399' }}>
+              12 ATM Clusters
+            </div>
+            <div style={{ fontSize: '0.7rem', color: 'var(--text-dim)' }}>Centroid Geofences Active</div>
+          </div>
+          <div>
+            <div style={{ fontSize: '0.68rem', color: '#c084fc', textTransform: 'uppercase', fontWeight: 700 }}>
+              SYSTEM INTEGRITY
+            </div>
+            <div style={{ fontSize: '1.15rem', fontWeight: 800, color: '#a78bfa' }}>
+              100% Zero Leakage
+            </div>
+            <div style={{ fontSize: '0.7rem', color: 'var(--text-dim)' }}>Strict Causality Enforced</div>
+          </div>
+        </div>
+      )}
+
+      {userRole === 'FIELD_OFFICER' && (
+        <div style={{
+          background: 'linear-gradient(135deg, rgba(245, 158, 11, 0.15), rgba(30, 41, 59, 0.8))',
+          border: '1px solid rgba(245, 158, 11, 0.4)',
+          borderRadius: 'var(--radius-md)',
+          padding: '0.75rem 1.25rem',
+          marginBottom: '1.25rem',
+          display: 'flex',
+          justifyContent: 'space-between',
+          alignItems: 'center'
+        }}>
+          <div>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+              <span className="badge badge-medium" style={{ fontSize: '0.68rem' }}>TACTICAL PATROL MODE</span>
+              <strong style={{ color: '#f8fafc', fontSize: '0.95rem' }}>Assigned Unit: FIELD-501 (Bengaluru South Division)</strong>
+            </div>
+            <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)', marginTop: '0.2rem' }}>
+              Immediate priority: Acknowledge dispatched alerts and position patrol near projected ATM cash-out clusters.
+            </div>
+          </div>
+          <div style={{ textAlign: 'right' }}>
+            <span className="badge badge-high" style={{ animation: 'pulseGlow 2s infinite' }}>
+              {alerts.filter(a => a.status === 'DISPATCHED').length} URGENT ALERTS PENDING
+            </span>
+          </div>
+        </div>
+      )}
 
       {loading ? (
         <div style={{ textAlign: 'center', padding: '4rem', color: '#38bdf8' }}>
@@ -165,7 +244,7 @@ export default function App() {
           gap: '1.5rem',
           alignItems: 'start'
         }}>
-          {/* LEFT COLUMN: Case Dossier, Multi-hop Chain, Simulation */}
+          {/* LEFT COLUMN: Case Dossier, Multi-hop Chain, Simulation / Protocol */}
           <div>
             <CaseSelector
               cases={cases}
@@ -180,18 +259,46 @@ export default function App() {
               victimRegion={currentCaseMeta ? currentCaseMeta.victim_region : 'Unknown'}
             />
 
-            <SimWidget
-              caseId={selectedCaseId}
-              onTransactionInjected={handleTransactionInjected}
-              isSimulating={isSimulating}
-              currentTransactions={currentTransactions}
-              currentCaseMeta={currentCaseMeta}
-            />
-
+            {/* Evidence Simulation for Investigator & Admin, Tactical Protocol for Field Officer */}
+            {userRole !== 'FIELD_OFFICER' ? (
+              <SimWidget
+                caseId={selectedCaseId}
+                onTransactionInjected={handleTransactionInjected}
+                isSimulating={isSimulating}
+                currentTransactions={currentTransactions}
+                currentCaseMeta={currentCaseMeta}
+              />
+            ) : (
+              <div className="glass-card" style={{
+                background: 'rgba(15, 23, 42, 0.85)',
+                border: '1px solid rgba(245, 158, 11, 0.3)',
+                marginBottom: '1.25rem'
+              }}>
+                <div style={{ fontSize: '0.9rem', fontWeight: 700, color: '#fbbf24', marginBottom: '0.5rem' }}>
+                  📋 Standard Field Interception Protocol
+                </div>
+                <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)', lineHeight: '1.6' }}>
+                  1. <strong>Arrive at Cluster:</strong> Establish perimeter surveillance around primary ATM vestibule.<br />
+                  2. <strong>Acknowledge Alert:</strong> Click "Acknowledge" on the alert panel to log unit arrival.<br />
+                  3. <strong>Observe Suspects:</strong> Flag repeated card swipes or multi-card withdrawals during projected time window.<br />
+                  4. <strong>Detain & Notify:</strong> Contact Cyber Operations if suspect is apprehended with cash evidence.
+                </div>
+              </div>
+            )}
           </div>
 
           {/* RIGHT COLUMN: Map, Projected Time Window, Top-K Rankings, SHAP, Alerts */}
           <div>
+            {/* Field Officer: Alerts pinned to the very top */}
+            {userRole === 'FIELD_OFFICER' && (
+              <div style={{ marginBottom: '1.25rem' }}>
+                <AlertsPanel
+                  alerts={alerts}
+                  onAcknowledgeAlert={handleAcknowledgeAlert}
+                />
+              </div>
+            )}
+
             <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '0.25rem' }}>
               <TimeWindowCard
                 timeWindow={prediction ? prediction.estimated_cashout_time_window : null}
@@ -205,7 +312,6 @@ export default function App() {
                 currentMuleCity={currentTransactions?.length > 0 ? currentTransactions[currentTransactions.length - 1].receiver_account : null}
               />
 
-
               <div style={{ display: 'grid', gridTemplateColumns: '1.1fr 0.9fr', gap: '1.25rem' }}>
                 <RankingsTable
                   predictions={prediction ? prediction.all_ranked_locations : []}
@@ -218,12 +324,15 @@ export default function App() {
                 />
               </div>
 
-              <div style={{ marginTop: '1.25rem' }}>
-                <AlertsPanel
-                  alerts={alerts}
-                  onAcknowledgeAlert={handleAcknowledgeAlert}
-                />
-              </div>
+              {/* Investigator and Admin: Alerts at bottom */}
+              {userRole !== 'FIELD_OFFICER' && (
+                <div style={{ marginTop: '1.25rem' }}>
+                  <AlertsPanel
+                    alerts={alerts}
+                    onAcknowledgeAlert={handleAcknowledgeAlert}
+                  />
+                </div>
+              )}
             </div>
           </div>
         </div>
@@ -231,3 +340,4 @@ export default function App() {
     </div>
   );
 }
+
