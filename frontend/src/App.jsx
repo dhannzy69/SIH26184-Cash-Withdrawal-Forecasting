@@ -9,6 +9,7 @@ import TimeWindowCard from './components/TimeWindowCard';
 import ShapExplainer from './components/ShapExplainer';
 import SimWidget from './components/SimWidget';
 import AlertsPanel from './components/AlertsPanel';
+import LoginGateway from './components/LoginGateway';
 
 export default function App() {
   const [systemOnline, setSystemOnline] = useState(false);
@@ -21,19 +22,15 @@ export default function App() {
   const [loading, setLoading] = useState(true);
   const [isSimulating, setIsSimulating] = useState(false);
 
-  // Authenticated Officer State
+  // Authenticated Officer State (Restricted gatekeeper: null if no active session)
   const [currentUser, setCurrentUser] = useState(() => {
     const saved = localStorage.getItem('sih_officer');
     if (saved) {
       try { return JSON.parse(saved); } catch (e) {}
     }
-    return {
-      username: 'officer_sharma',
-      full_name: 'Inspector Vikram Sharma',
-      badge_number: 'CYBER-108',
-      role: 'INVESTIGATOR'
-    };
+    return null;
   });
+
 
   const handleLogin = (user, token) => {
     setCurrentUser(user);
@@ -145,6 +142,16 @@ export default function App() {
   const currentAccounts = (caseDossier && caseDossier.accounts) || [];
   const userRole = currentUser?.role || 'INVESTIGATOR';
 
+  // If not authenticated, enforce the Login Gateway screen
+  if (!currentUser) {
+    return (
+      <LoginGateway
+        systemOnline={systemOnline}
+        onLogin={handleLogin}
+      />
+    );
+  }
+
   return (
     <div style={{ maxWidth: '1440px', margin: '0 auto', padding: '0.5rem 1rem 3rem 1rem' }}>
       <Header
@@ -153,6 +160,7 @@ export default function App() {
         onLogin={handleLogin}
         onLogout={handleLogout}
       />
+
 
       {/* Role-Specific Command Bar */}
       {userRole === 'ADMIN' && (
